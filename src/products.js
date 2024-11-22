@@ -1,59 +1,57 @@
-import product1 from "./assets/products/1.png";
-import product2 from "./assets/products/2.png";
-import product3 from "./assets/products/3.png";
-import product4 from "./assets/products/4.png";
-import product5 from "./assets/products/5.png";
-import product6 from "./assets/products/6.webp";
-import product7 from "./assets/products/7.webp";
-import product8 from "./assets/products/8.webp";
-
 export const PRODUCTS = [
   {
     id: 1,
-    productName: "IPhone",
+    name: "IPhone",
     price: 999.0,
-    productImage: product1,
+    description:
+      "The latest iPhone with cutting-edge features and sleek design.",
   },
   {
     id: 2,
-    productName: "Macbook Pro 2022 (M1)",
+    name: "Macbook Pro 2022 (M1)",
     price: 1999.0,
-    productImage: product2,
+    description:
+      "A high-performance MacBook Pro powered by the M1 chip, perfect for professionals.",
   },
   {
     id: 3,
-    productName: "Cannon M50 Camera",
+    name: "Cannon M50 Camera",
     price: 699.0,
-    productImage: product3,
+    description:
+      "A compact and powerful camera for photography and video enthusiasts.",
   },
   {
     id: 4,
-    productName: "WLS Van Gogh Denim Jacket",
+    name: "WLS Van Gogh Denim Jacket",
     price: 228.0,
-    productImage: product4,
+    description:
+      "A stylish denim jacket inspired by Van Gogh's art, perfect for any occasion.",
   },
   {
     id: 5,
-    productName: "LED Light Strips",
+    name: "LED Light Strips",
     price: 19.99,
-    productImage: product5,
+    description:
+      "Versatile LED light strips to brighten up any space with customizable colors.",
   },
   {
     id: 6,
-    productName: "SPECTRUM LS TEE",
+    name: "SPECTRUM LS TEE",
     price: 68.0,
-    productImage: product6,
+    description: "A premium long-sleeve tee with a modern, vibrant design.",
   },
   {
     id: 7,
-    productName: "AUTO SERVICE SHIRT by GOLF WANG",
+    name: "AUTO SERVICE SHIRT by GOLF WANG",
     price: 120.0,
-    productImage: product7,
+    description:
+      "A unique and trendy shirt designed by GOLF WANG for a bold look.",
   },
   {
     id: 8,
-    productName: "DON'T TRIP UNSTRUCTURED HAT",
+    name: "DON'T TRIP UNSTRUCTURED HAT",
     price: 40.0,
-    productImage: product8,
+    description:
+      "A comfortable and stylish hat with a relaxed fit and eye-catching design.",
   },
 ];
