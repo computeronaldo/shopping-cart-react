@@ -1,0 +1,47 @@
+@import "../../App.scss";
+
+.products-container {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.product-container {
+    background-color: $secondaryColor;
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    h3 {
+        color: black;
+    }
+    p {
+        color: $primaryColor;
+    }
+}
+
+.product-info-container {
+    flex: 3;
+}
+
+.add-to-cart-btn {
+    @include ButtonStyle($primaryColor, #fff);
+    border: 2px solid black;
+    border-radius: 2px;
+    flex: 4;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .product-container {
+        flex-direction: column;
+    }
+    .add-to-cart-btn {
+        margin-bottom: 8px;
+    }
+}

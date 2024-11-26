@@ -1,0 +1,31 @@
+.backdrop {
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #938e8e;
+    filter: blur(1px) brightness(0.5);
+}
+
+.cart-container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 12px;
+}
+
+.close-cart-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 4px 8px;
+}

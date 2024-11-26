@@ -1,0 +1,40 @@
+$primaryColor: #F14A1B;
+$secondaryColor: #EEE5D6;
+
+@mixin ButtonStyle($color, $backgroundColor) {
+  padding: 8px 14px;
+  color: $color;
+  background-color: $backgroundColor;
+  margin: 4px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.app {
+  height: auto;
+  min-height: 100vh;
+  font-family: monospace, sans-serif;
+  padding: 24px;
+  background-color: $secondaryColor;
+
+  h3 {
+    font-size: 1.25rem;
+    color: $primaryColor;
+    margin-bottom: 12px;
+  }
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span:hover {
+    cursor: pointer;
+  }
+}
