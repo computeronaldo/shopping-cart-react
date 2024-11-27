@@ -20,13 +20,23 @@ function Cart({ setShowCart }) {
             return (
               <div key={product.id} className="cart-item">
                 <span>{product.name}</span>
-                <button onClick={() => removeFromCart(product.id)}>
-                  Remove
-                </button>
+                <div className="cart-item-info">
+                  <span>{product.quantity}</span>
+                  <button
+                    className="remove-from-cart-btn"
+                    onClick={() => removeFromCart(product.id)}
+                  >
+                    Remove
+                  </button>
+                </div>
               </div>
             );
           })}
-          {cart.length > 0 && <button onClick={clearCart}>Clear Cart</button>}
+          {cart.length > 0 && (
+            <button className="clear-cart-btn" onClick={clearCart}>
+              Clear Cart
+            </button>
+          )}
         </div>
         <div>
           <button className="close-cart-btn" onClick={handleCloseCartBtnClick}>

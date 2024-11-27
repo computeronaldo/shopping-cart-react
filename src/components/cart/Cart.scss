@@ -1,5 +1,6 @@
+@import "../../App.scss";
+
 .backdrop {
-    max-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,12 +21,30 @@
 .cart-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 24px;
     margin: 12px;
 }
 
+.cart-item-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
 .close-cart-btn {
-    border: 0;
+    @include ButtonStyle($primaryColor, $secondaryColor);
+    border: 2px solid #000;
     border-radius: 4px;
     padding: 4px 8px;
+}
+
+.remove-from-cart-btn {
+    @include ButtonStyle($primaryColor, $secondaryColor);
+    border: 2px solid #000;
+}
+
+.clear-cart-btn {
+    @include ButtonStyle($primaryColor, $secondaryColor);
+    border: 2px solid #000;
 }

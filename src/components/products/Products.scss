@@ -25,16 +25,23 @@
 }
 
 .product-info-container {
-    flex: 3;
+    max-width: 350px;
 }
 
 .add-to-cart-btn {
     @include ButtonStyle($primaryColor, #fff);
     border: 2px solid black;
     border-radius: 2px;
-    flex: 4;
     max-width: 150px;
     cursor: pointer;
+}
+
+.product-actions-btn-grp {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
 }
 
 @media (max-width: 500px) {
