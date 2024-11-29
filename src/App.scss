@@ -15,26 +15,18 @@ body {
   height: 100%;
 }
 
-.app {
-  height: auto;
-  min-height: 100vh;
-  font-family: monospace, sans-serif;
-  padding: 24px;
-  background-color: $secondaryColor;
-
-  h3 {
-    font-size: 1.25rem;
-    color: $primaryColor;
-    margin-bottom: 12px;
-  }
-}
-
 .app-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 
   span:hover {
     cursor: pointer;
   }
+}
+
+.app-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

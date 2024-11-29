@@ -1,24 +1,22 @@
-import { useState } from "react";
-import "./App.scss";
-import Cart from "./components/cart/Cart";
+import { useNavigate } from "react-router-dom";
 import ProductList from "./components/products/Products";
 import { PRODUCTS } from "./constants/products";
+import "./App.scss";
 
 function App() {
-  const [showCart, setShowCart] = useState(false);
+  const navigate = useNavigate();
 
-  const handleCartShowClick = () => {
-    setShowCart(true);
+  const handleNavigateToCart = () => {
+    navigate("/cart");
   };
 
   return (
-    <div className="app">
-      <div className="app-header">
+    <div className="app-header">
+      <div className="app-header-nav">
         <h3>Welcome To The Store</h3>
-        <span onClick={handleCartShowClick}>Cart</span>
+        <span onClick={handleNavigateToCart}>Cart</span>
       </div>
-      {showCart && <Cart setShowCart={setShowCart} />}
-      {!showCart && <ProductList products={PRODUCTS} />}
+      <ProductList products={PRODUCTS} />
     </div>
   );
 }

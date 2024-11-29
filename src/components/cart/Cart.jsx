@@ -1,15 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import "./Cart.scss";
 import { useCartStore } from "../../store/cart-store";
 
-function Cart({ setShowCart }) {
+function Cart() {
+  const navigate = useNavigate();
   const cart = useCartStore((state) => state.cart);
   const removeFromCart = useCartStore((state) => state.removeFromCart);
   const clearCart = useCartStore((state) => state.clearCart);
 
-  const handleCloseCartBtnClick = () => {
-    setShowCart(false);
+  const handleNavigateToProducts = () => {
+    navigate("/");
   };
-
   return (
     <>
       <div className="backdrop"></div>
@@ -39,8 +40,8 @@ function Cart({ setShowCart }) {
           )}
         </div>
         <div>
-          <button className="close-cart-btn" onClick={handleCloseCartBtnClick}>
-            Close Cart
+          <button className="close-cart-btn" onClick={handleNavigateToProducts}>
+            Back
           </button>
         </div>
       </div>

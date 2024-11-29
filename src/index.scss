@@ -1,0 +1,15 @@
+@import "./App.scss";
+
+.app {
+    height: auto;
+    min-height: 100vh;
+    font-family: monospace, sans-serif;
+    padding: 24px;
+    background-color: $secondaryColor;
+  
+    h3 {
+      font-size: 1.25rem;
+      color: $primaryColor;
+      margin-bottom: 12px;
+    }
+  }
