@@ -18,16 +18,23 @@
     justify-content: space-between;
 }
 
+.cart-inner-container {
+    min-width: 500px;
+}
+
 .cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
     margin: 12px;
+    padding: 12px;
+    border: 2px solid;
 }
 
 .cart-item-info {
     display: flex;
+    flex-direction: column;
     gap: 12px;
     align-items: center;
 }
@@ -47,4 +54,10 @@
 .clear-cart-btn {
     @include ButtonStyle($primaryColor, $secondaryColor);
     border: 2px solid #000;
+}
+
+.total-amount {
+    font-weight: bold;
+    margin: 16px 0;
+    padding-left: 6px;
 }
